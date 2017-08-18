@@ -16,3 +16,4 @@ alias raspi='sudo screen /dev/ttyUSB0 115200'
 # dirs with specific bins
 PATH=$PATH:/home/$USER/pycharm:/home/$USER/pycharm/bin
 PATH=$PATH:/home/$USER/android-studio/platform-tools
+PATH=$PATH:/home/$USER/nodejs/bin
