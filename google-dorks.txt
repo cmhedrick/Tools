@@ -1,0 +1,9 @@
+Google Dorks
+
+Search only against a ceratin URL:
+site:targetUrl.com
+
+Search for specific term in URL
+site:targetUrl.com inurl:blog/
+
+
