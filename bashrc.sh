@@ -13,6 +13,9 @@ alias act='source env/bin/activate'
 alias rs='python manage.py runserver 0.0.0.0:8000'
 # init raspberry pi connection
 alias raspi='sudo screen /dev/ttyUSB0 115200'
+# get ports being used
+alias getPorts='netstat -tulpn'
+
 # dirs with specific bins
 PATH=$PATH:/home/$USER/pycharm:/home/$USER/pycharm/bin
 PATH=$PATH:/home/$USER/android-studio/platform-tools
