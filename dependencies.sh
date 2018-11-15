@@ -11,3 +11,10 @@
 # secure-delete for all your secure deleting needs
 
 sudo apt-get install synaptic git netcat aircrack-ng nmap vim colordiff virtualenvwrapper python2.7-dev python3-dev python-dev libtiff5-dev libjpeg8-dev zlib1g-dev libfreetype6-dev liblcms2-dev libwebp-dev libharfbuzz-dev libfribidi-dev tcl8.6-dev tk8.6-dev python-tk gimp curl gparted hexchat inkscape pwgen wireshark macchanger shutter secure-delete openvpn network-manager-openvpn network-manager-openvpn-gnome
+
+# install encryptr (cross platform cloud based password manager)
+wget https://spideroak.com/dist/encryptr/signed/linux/deb/encryptr_2.0.0-1_amd64.deb -O encryptr.deb
+
+sudo dpkg -i encryptr.deb
+
+rm encryptr.deb
