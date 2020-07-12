@@ -1,0 +1,31 @@
+version: "3"
+
+services:
+  postgres:
+    image: postgres
+    environment:
+      - POSTGRES_DB=postgres
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    restart: always
+    stdin_open: true
+    tty: true
+
+  backend:
+    build: .
+    command: python /backend/manage.py runserver 0.0.0.0:8000
+    ports:
+      - "8000:8000"
+    depends_on:
+      - postgres
+    volumes:
+      - ./:/backend
+      - ./git/:/.git
+    restart: always
+    stdin_open: true
+    tty: true
+
+volumes:
+  pgdata:
