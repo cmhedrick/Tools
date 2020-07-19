@@ -24,6 +24,7 @@ The current set up has a couple of assumptions being made.
 4. Expanding on point 3, before the `COPY` command notice the `WORKDIR` command. The `WORKDIR` command is setting the directory in which will be treated as the `base`/`home` for running the commands. So this is the same as being actually in the `backend` directory, meaning when we do the `COPY` command it will be copying the `requirements.txt` into the `backend`
 
 Example Structure:
+
 ![Picture of the example structure of the project](https://github.com/cmhedrick/Tools/blob/master/docker/django-docker/structure.png)
 
 ## Closing:
